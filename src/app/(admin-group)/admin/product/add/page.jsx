@@ -5,9 +5,9 @@ import { getcategories, getColors, getBrands } from "@/library/api-call";
 import React from "react";
 import Select from 'react-select'
 import { AxiosInstance, generateSlug, notify,getCookie } from "@/library/helper";
-// import TextEditor from "@/components/admin/TextEditor";
-  import dynamic from "next/dynamic";
-const TextEditor = dynamic(() => import("@/components/admin/TextEditor"), { ssr: false });
+import TextEditor from "@/components/admin/TextEditor";
+//   import dynamic from "next/dynamic";
+// const TextEditor = dynamic(() => import("@/components/admin/TextEditor"), { ssr: false });
 
 
 
