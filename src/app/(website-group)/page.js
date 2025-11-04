@@ -22,7 +22,7 @@ import React from 'react';
 
 export default async function Page() {
   const products = await getproducts(null);
-  const data = products.data || [];
+  const data = products?.data || [];
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-10 grid 
