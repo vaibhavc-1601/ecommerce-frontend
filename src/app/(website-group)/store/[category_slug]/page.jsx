@@ -28,7 +28,7 @@ export default async function page({ params, searchParams }) {
   const color = searchParams.color || null;
   const brand = searchParams.brand || null;
   const products = await getproducts(null, params?.category_slug, color, brand);
-  const data = products.data || [];
+  const data = products?.data || [];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
